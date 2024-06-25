@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Hutang</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>WARUNG MAMA RIZAL</h1>
+
+      <div class="menu">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Cari berdasarkan nama"
+          oninput="cariHutang()"
+        />
+      </div>
+
+      <div class="form">
+        <input type="text" id="kode" placeholder="Kode" />
+        <input type="text" id="nama" placeholder="Nama" />
+        <input type="text" id="barang" placeholder="Nama Barang" />
+        <input type="number" id="jumlah" placeholder="Jumlah" />
+        <input type="date" id="tanggal" placeholder="Tanggal" />
+        <button onclick="tambahHutang()">Tambah</button>
+      </div>
+
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Kode</th>
+            <th>Nama</th>
+            <th>Jumlah</th>
+            <th>Tanggal</th>
+            <th>Nama Barang</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- Data Hutang akan dimasukkan di sini -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="java.js"></script>
+  </body>
+</html>
